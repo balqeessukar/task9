@@ -1,0 +1,254 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: calc(100%-120px);
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header {
+  background: #FFF;
+  box-shadow: #141414;
+  border-radius: 55px;
+  z-index: 0;
+  position: sticky;
+  margin: auto;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(10, 10, 10);
+  border: none;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #87378f;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: #87378f;
+  color: #FFF;
+}
+
+#overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(68, 67, 67, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+.openbtn:hover {
+  background-color: #69308f;
+}
+.courses {
+  padding: 20px 40px;
+  background-color: #F4F4F4;
+}
+
+.courses .row {
+  gap: 10px;
+}
+
+.courses .course-items {
+  width: calc((100% - 10px) /2);
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.course-item {
+  width: 33%;
+  position: relative;
+  fill: #8d8b8b;
+}
+
+.course-card {
+  position: relative;
+}
+
+.course-item img {
+  width: 100%;
+  aspect-ratio: 135.09/99.079;
+  filter: brightness(70%);
+  display: flex;
+}
+
+.course-item .course-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.course-info span:last-of-type {
+  align-self: flex-end;
+  color: #ffffff;
+  font-family: Poppins;
+}
+
+.course-details .views {
+  color: #545BE8;
+  font-family: Poppins;
+  font-size: 12.206px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+
+}
+
+.course-info span:first-of-type {
+  background: #545BE8;
+  color: #FFF;
+  font-family: Poppins;
+  padding: 2px 4px;
+}
+
+.course-info span:last-of-type {
+  align-self: flex-end;
+}
+
+.course-details {
+  padding: 5px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.course-details .row:last-of-type {
+  justify-content: flex-start;
+  color: #969696;
+}
+
+.course-details h2 {
+  color: #141E32;
+  font-family: Poppins;
+  font-size: 18.925px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.course-details span {
+  color: #969696;
+  font-family: Poppins;
+  font-size: 12.694px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.course-description {
+  width: calc((100% - 10px) /2);
+}
+
+.course-description .column {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.course-description h2 {
+  color: #141E32;
+  font-family: Poppins;
+  font-size: 28.474px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.course-description p {
+  color: #545BE8;
+  font-family: Inter;
+  font-size: 15.413px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.course-description a {
+  border-radius: 4.119px;
+  background: #545BE8;
+  display: flex;
+  width: 90.016px;
+  padding: 5.354px 20.181px;
+  justify-content: center;
+  align-items: center;
+  gap: 4.119px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Inter;
+}
+
+.course-description span {
+  color: #969696;
+  font-family: Poppins;
+  font-size: 17.413px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
